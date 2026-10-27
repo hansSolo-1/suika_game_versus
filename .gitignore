@@ -1,0 +1,14 @@
+﻿# Build output (CMake, includes downloaded SFML)
+build/
+out/
+
+# Visual Studio / VS Code local files
+.vs/
+.vscode/
+*.user
+
+# Compiled files
+*.exe
+*.obj
+*.pdb
+*.ilk
