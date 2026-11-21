@@ -1,10 +1,10 @@
-﻿# Build output (CMake, includes downloaded SFML)
-build/
+﻿build/
+cmake-build-*/
 out/
-
-# Visual Studio / VS Code local files
+.idea/
 .vs/
 .vscode/
+CMakeUserPresets.json
 *.user
 
 # Compiled files
