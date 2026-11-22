@@ -8,11 +8,9 @@
 #include <cmath>
 
 namespace {
-    // TODO: replace with the names in core/Config.hpp
-    constexpr float kFloorY    = boxHeight;  // board height, y grows downward
+    constexpr float kFloorY    = 560.f;  // board height, y grows downward
     constexpr float kFallSpeed = 5.0f;    // 300 u/s at 60 ticks/s
 
-    // TODO: replace with the FruitTypes.hpp lookup (roadmap table 1.2)
     float radiusOf(int tier) {
         static const float r[11] = {fruitTypes[0].radius, fruitTypes[1].radius, fruitTypes[2].radius, fruitTypes[3].radius, fruitTypes[4].radius, fruitTypes[5].radius, fruitTypes[6].radius, fruitTypes[7].radius, fruitTypes[8].radius, fruitTypes[9].radius, fruitTypes[10].radius};
         return (tier >= 0 && tier < 11) ? r[tier] : 13.0f;
